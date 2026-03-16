@@ -71,6 +71,7 @@ const CHECK_IN = {
       feedback: 'Das stimmt nicht! Die Berliner Mauer wurde erst 1961 errichtet. 1945 begann zunächst die Besatzungszeit – die sichtbare Teilung kam viel später.'
     }
   ],
+  options: ['stimmt', 'stimmt nicht', 'weiß ich nicht'],
   openPrompt: 'Was wäre für dich am schwersten, wenn deine Stadt nach einem Krieg zerstört wäre?'
 };
 
