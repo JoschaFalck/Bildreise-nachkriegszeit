@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lehrerbereich – Interaktive Bildreise Nachkriegszeit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <style>
+    .teacher-page { max-width: 800px; margin: 0 auto; padding: 2rem 1rem; }
+    .teacher-page h1 { margin-bottom: 0.5rem; }
+    .overview-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .station-overview-card {
+      background: var(--bg-card);
+      border-radius: var(--radius);
+      padding: 1rem;
+      box-shadow: var(--shadow-sm);
+      border-left: 4px solid var(--gold);
+    }
+    .station-overview-card h3 { font-size: 0.95rem; margin-bottom: 0.5rem; }
+    .station-overview-card ul { font-size: 0.85rem; padding-left: 1.2rem; margin: 0; }
+    .meta-card {
+      background: var(--bg-card);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border);
+    }
+    .meta-card h2 { margin-bottom: 1rem; }
+    .color-legend { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 0.5rem; }
+    .color-item { display: flex; align-items: center; gap: 0.4rem; font-size: 0.85rem; }
+    .color-dot { width: 12px; height: 12px; border-radius: 50%; }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <header id="app-header" role="banner">
+      <div class="header-inner">
+        <div class="site-brand">
+          <span class="site-icon" aria-hidden="true">&#9873;</span>
+          <span class="site-title">Bildreise: Nachkriegszeit</span>
+        </div>
+        <a href="index.html" class="btn-icon">&#8592; Zur Lernseite</a>
+      </div>
+    </header>
+
+    <main role="main">
+      <div class="teacher-page">
+        <span class="section-label" style="display:inline-block;margin-bottom:0.75rem">Lehrerbereich</span>
+        <h1>Interaktive Bildreise<br>Nachkriegszeit und Teilung Deutschlands</h1>
+        <p style="color:var(--text-mid);margin-bottom:2rem">Übersicht und methodische Hinweise für Lehrkräfte</p>
+
+        <!-- META-INFOS -->
+        <div class="meta-card">
+          <h2>&#128218; Grunddaten</h2>
+          <ul>
+            <li><strong>Fach:</strong> Geschichte</li>
+            <li><strong>Jahrgangsstufe:</strong> 8. Klasse, Mittelschule Bayern</li>
+            <li><strong>Lehrplanbezug:</strong> LehrplanPLUS – Geschichte 8 – Lernbereich 3: Die Welt nach dem Zweiten Weltkrieg</li>
+            <li><strong>Empfohlener Zeitrahmen:</strong> ca. 2 Unterrichtsstunden (Doppelstunde) oder aufgeteilt auf 3×45 min</li>
+            <li><strong>Geräte:</strong> Laptop, Tablet oder Schulcomputer mit Browser – kein Account nötig</li>
+            <li><strong>Vorkenntnisse:</strong> Zweiter Weltkrieg (grob), Orientierung in Europa</li>
+          </ul>
+        </div>
+
+        <!-- LERNZIELE -->
+        <div class="meta-card">
+          <h2>&#127919; Lernziele</h2>
+          <ul>
+            <li>Lernende können die Nachkriegssituation Deutschlands beschreiben</li>
+            <li>Lernende können die vier Besatzungszonen und Siegermächte benennen</li>
+            <li>Lernende können die Berliner Luftbrücke in ihrem Kontext erklären</li>
+            <li>Lernende können BRD und DDR politisch unterscheiden</li>
+            <li>Lernende können die Bedeutung der Berliner Mauer als Symbol deuten</li>
+            <li>Lernende können Bezüge zwischen Vergangenheit und Gegenwart herstellen</li>
+          </ul>
+        </div>
+
+        <!-- STATIONEN-ÜBERSICHT -->
+        <div class="meta-card">
+          <h2>&#128205; Überblick: Stationen der Bildreise</h2>
+          <div class="overview-grid">
+            <div class="station-overview-card">
+              <h3>Start &amp; Check-in</h3>
+              <ul>
+                <li>Lernzielorientierung</li>
+                <li>Vorwissensaktivierung (3 Aussagen)</li>
+                <li>Offene Einstiegsfrage</li>
+              </ul>
+            </div>
+            <div class="station-overview-card">
+              <h3>Station 1: Trümmer</h3>
+              <ul>
+                <li>Bildbeobachtung: Berlin 1945</li>
+                <li>Alltagsprobleme nach dem Krieg</li>
+                <li>Perspektivübernahme</li>
+              </ul>
+            </div>
+            <div class="station-overview-card">
+              <h3>Station 2: Besatzungszonen</h3>
+              <ul>
+                <li>Kartenlesen und -deuten</li>
+                <li>Vier Siegermächte</li>
+                <li>Berlin als Sonderfall</li>
+              </ul>
+            </div>
+            <div class="station-overview-card">
+              <h3>Station 3: Hoffnung am Himmel</h3>
+              <ul>
+                <li>Bildanalyse: Menschen bei Tempelhof</li>
+                <li>Berlin-Blockade verstehen</li>
+                <li>Emotionsperspektive</li>
+              </ul>
+            </div>
+            <div class="station-overview-card">
+              <h3>Station 4: Rosinenbomber</h3>
+              <ul>
+                <li>Luftbrücke: Logistik &amp; Politik</li>
+                <li>Begriff „Rosinenbomber"</li>
+                <li>Timeline-Übung</li>
+              </ul>
+            </div>
+            <div class="station-overview-card">
+              <h3>Station 5: Zwei Staaten</h3>
+              <ul>
+                <li>BRD und DDR unterscheiden</li>
+                <li>Demokratie vs. Einparteienstaat</li>
+                <li>Demokratiebildung</li>
+              </ul>
+            </div>
+            <div class="station-overview-card">
+              <h3>Station 6: Grenze &amp; Mauer</h3>
+              <ul>
+                <li>Berliner Mauer als Symbol</li>
+                <li>Folgen für Alltag &amp; Familien</li>
+                <li>Freiheit vs. Sicherheit</li>
+              </ul>
+            </div>
+            <div class="station-overview-card">
+              <h3>Check-out</h3>
+              <ul>
+                <li>Mini-Quiz (5 Fragen)</li>
+                <li>Zeitstrahl</li>
+                <li>Selbsteinschätzung</li>
+                <li>Reflexion &amp; Transfer</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- FARBLOGIK -->
+        <div class="meta-card">
+          <h2>&#127912; Farblogik der Hotspots</h2>
+          <p style="margin-bottom:0.75rem">Die Hotspots auf den historischen Bildern sind farblich kodiert:</p>
+          <div class="color-legend">
+            <div class="color-item"><div class="color-dot" style="background:#1565c0"></div> Blau = Information</div>
+            <div class="color-item"><div class="color-dot" style="background:#d4690a"></div> Orange = Aufgabe</div>
+            <div class="color-item"><div class="color-dot" style="background:#2e7d32"></div> Grün = Reflexion</div>
+            <div class="color-item"><div class="color-dot" style="background:#546e7a"></div> Grau = Extra-Info / Quelle</div>
+          </div>
+        </div>
+
+        <!-- AUFGABENTYPEN -->
+        <div class="meta-card">
+          <h2>&#128203; Aufgabentypen</h2>
+          <ul>
+            <li><strong>Pflichtaufgaben</strong> (orange Randlinie): Für alle Lernenden verbindlich</li>
+            <li><strong>Zusatzaufgaben</strong> (grau): Für schnellere Lernende oder als Hausaufgabe</li>
+            <li><strong>Interaktive Übungen</strong>: Multiple Choice, Zuordnung, Lückentext, Timeline</li>
+            <li><strong>Kooperationsaufgaben</strong> (ausklappbar): Für Partner- und Gruppenarbeit</li>
+            <li><strong>Reflexionskarten</strong> (grün): Für individuelle Reflexion</li>
+          </ul>
+        </div>
+
+        <!-- TECHNISCHE HINWEISE -->
+        <div class="meta-card">
+          <h2>&#128187; Technische Hinweise</h2>
+          <ul>
+            <li>Die Website läuft ohne Server – einfach <code>index.html</code> im Browser öffnen oder per GitHub Pages hosten</li>
+            <li>Antworten werden lokal im Browser gespeichert (localStorage) – kein Login nötig</li>
+            <li>Lernende können ihr Lernjournal per Browser-Druck als PDF speichern</li>
+            <li>Bilder müssen sich im Unterordner <code>images/</code> befinden</li>
+            <li>Keine Internetverbindung nötig (außer für Google Fonts)</li>
+            <li>Kompatibel mit Chrome, Firefox, Safari, Edge</li>
+            <li>Optimiert für Laptop und Tablet (ab 375px Bildschirmbreite)</li>
+          </ul>
+        </div>
+
+        <!-- METHODISCHE HINWEISE -->
+        <div class="meta-card">
+          <h2>&#128161; Methodische Hinweise</h2>
+          <ul>
+            <li>Empfehlung: Check-in gemeinsam im Plenum besprechen, dann selbstständige Stationsarbeit</li>
+            <li>Kooperationsaufgaben eignen sich als Pausen/Austauschphasen zwischen den Stationen</li>
+            <li>Station 6 bietet sich für eine abschließende Klassendiskussion an (Freiheit vs. Sicherheit)</li>
+            <li>Das Lernjournal kann als Grundlage für einen Unterrichtsnachbereitung oder als Portfolio genutzt werden</li>
+            <li>Fragen für Leistungsfeststellung können aus den Pflichtaufgaben abgeleitet werden</li>
+          </ul>
+        </div>
+
+        <div class="meta-card" style="background:var(--green-light);border-color:var(--green)">
+          <h2>&#128218; Quellen und Lizenzen</h2>
+          <p>Alle verwendeten Bilder sind gemeinfrei oder unter Creative-Commons-Lizenzen verfügbar. Details siehe <a href="impressum.html">Impressum</a> und <code>images/BILDER_QUELLEN.txt</code>.</p>
+          <p>Weiterführende Links in den Stationen verweisen auf <strong>bpb.de</strong> und <strong>dhm.de</strong> – seriöse, schulgeeignete Quellen.</p>
+        </div>
+
+        <div class="nav-row" style="margin-top:2rem">
+          <a href="index.html" class="btn btn-primary">&#8592; Zur Lernseite</a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <p>
+        <a href="impressum.html">Impressum</a> |
+        <a href="datenschutz.html">Datenschutz</a> |
+        <a href="lehrer.html">Lehrerbereich</a>
+      </p>
+      <p class="footer-note">Lernmaterial Geschichte | 8. Klasse Mittelschule Bayern | Nachkriegszeit</p>
+    </footer>
+  </div>
+</body>
+</html>
